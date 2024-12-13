@@ -1,0 +1,30 @@
+Div {
+    background-color:beige;
+    text-align-last: center;
+}
+
+h1 {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align-last: center;
+}
+
+header{
+    background-color: black
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-color: aqua;
+    width: 80px;
+    height: 40px;
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+    background-color: darkgreen;
+    width: 790px;
+    height:100px;
+}
