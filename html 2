@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Suore Online</title>
+        <link rel="stylesheet" type=text/css href="styles.css">
+        <style>
+            li{
+                color:white;
+                align-content: space-between;text-align: center;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+       <img src="https://media.istockphoto.com/id/450247253/it/foto/suora-in-una-chiesa.jpg?s=612x612&w=0&k=20&c=sXiK9sjTGxfj7kSTfSNz3k523vgbtXxhLyTS6Im8qog=" alt="suora con rosario" width=785 height=300>
+        <nav>
+            <h1>Benvenuti su Suore Online</h1>
+                <ul>
+                    <li>
+                        <ul>Menù
+                            <li>Chi siamo</li>
+                            <li>Confessati</li>
+                            <li>Pentiti</li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+    <section>
+        <div><h3>Prega con noi</h3>
+            <p>Ti aspettiamo tutti i giorni alle 16:00 per recitare insieme il Santo Rosario.</p>
+        </div>
+        <div><h3>Confessati</h3>
+            <p>Liberati dal peso dei tuoi peccati. La confessione ti avvicina al Nostro Signore.</p>
+            <img src="https://thumbs.dreamstime.com/b/ritratto-di-giovane-bella-suora-della-donna-che-prega-con-il-isolat-del-rosario-52078993.jpg" alt="suora con rosario" width=190 height=185>
+        </div>
+        <div><h3>Pentiti</h3>
+            <p>Lo so che hai peccato. Pentiti!</p>
+        </div>
+    </section>
+        <form><h2>Rispondi alla chiamata del Signore</h2><br>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Il tuo nome"><br><br>
+
+            <label for="cognome">Cognome</label>
+            <input type="text" id="cognome" name="cognome" placeholder="Il tuo cognome"><br><br>
+            
+            <label for="luogo di nascita">Luogo di nascita</label><br><br>
+            <select id="luogo di nascita" name="Luogo di Nascita">
+                <option value="taranto">Taranto</option>
+                <option value="martina franca">Martina Franca</option>
+                <option value="pulsano">Pulsano</option>
+            </select><br><br>
+            
+            <label for="data di nascita">Data di nascita:</label><br><br>
+            <input type="date" id="data di nascita" name="Data di nascita">
+
+            <imput type="submit" value="Diventa novizia"></imput>
+        </form>
+    <footer>
+        <button>Contattaci</button>
+    </footer>
+</body>
+</html>
