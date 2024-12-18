@@ -5,12 +5,6 @@
         <title>Suore Online</title>
         <link rel="stylesheet" type=text/css href="styles.css">
         <script src="script.js"></script>
-        <style>
-            li{
-                color:white;
-                align-content: space-between;text-align: center;
-            }
-        </style>
     </head>
 <body>
     <header>
@@ -19,7 +13,7 @@
             <h1>Benvenuti su Suore Online</h1>
                 <ul>
                     <li>
-                        <ul>Menù
+                        <ul>Home
                             <li>Chi siamo</li>
                             <li>Confessati</li>
                             <li>Pentiti</li>
@@ -38,6 +32,9 @@
         </div>
         <div><h3>Pentiti</h3>
             <p>Lo so che hai peccato. Pentiti!</p>
+              <video width="250" height="200" controls>
+                <source src="https://www.youtube.com/watch?v=jgbIErsFO10" type="video/mp4">
+              </video>
         </div>
     </section>
         <form><h2>Rispondi alla chiamata del Signore</h2><br>
@@ -57,11 +54,9 @@
             <label for="data di nascita">Data di nascita:</label><br><br>
             <input type="date" id="data di nascita" name="Data di nascita"><br><br>
 
-            <button id="bf" class="bottoneform" type="submit" onclick="mostramessaggio()" value="Diventa novizia">Diventa novizia
-            </button>
+            <button id="bf" class="bottoneform" type="submit" onclick="mostramessaggio()" value="Diventa novizia">Diventa novizia</button>
             <p id="message"></p>
-            
-        </form>
+         </form>
     <footer>
         <button>Contattaci</button>
     </footer>
