@@ -16,12 +16,16 @@ header{
 }
 
 form{
-    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0RyhN-FUX2J10MqojH4ZUF48_ktvsmAgEfd0dK0X49OgGkD9GB1OGpQPLBNEBuZn7npNdQdshLXcxyGxaDfhrwZvDClcv5GCP5aHj9d5MOACyHUPXeA7GjC5-bv3PVWSI-6PdDQ/s1600/jesus-faustina.jpg);
-    background-position: 400px 10px;
+   background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0RyhN-FUX2J10MqojH4ZUF48_ktvsmAgEfd0dK0X49OgGkD9GB1OGpQPLBNEBuZn7npNdQdshLXcxyGxaDfhrwZvDClcv5GCP5aHj9d5MOACyHUPXeA7GjC5-bv3PVWSI-6PdDQ/s1600/jesus-faustina.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     padding-left: 200px;
     padding-right: 200px;
     padding-bottom: 50px;
     padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 input[type=text] {
@@ -38,6 +42,16 @@ button{
     color: white;
     border-color: aqua;
     width: 80px;
+    height: 40px;
+    margin-top:30px;
+}
+
+.bottoneform{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(255, 238, 0);
+    border-radius: 10px;
+    width: 150px;
     height: 40px;
     margin-top:30px;
 }

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Suore Online</title>
         <link rel="stylesheet" type=text/css href="styles.css">
+        <script src="script.js"></script>
         <style>
             li{
                 color:white;
@@ -54,9 +55,12 @@
             </select><br><br>
             
             <label for="data di nascita">Data di nascita:</label><br><br>
-            <input type="date" id="data di nascita" name="Data di nascita">
+            <input type="date" id="data di nascita" name="Data di nascita"><br><br>
 
-            <imput type="submit" value="Diventa novizia"></imput>
+            <button id="bf" class="bottoneform" type="submit" onclick="mostramessaggio()" value="Diventa novizia">Diventa novizia
+            </button>
+            <p id="message"></p>
+            
         </form>
     <footer>
         <button>Contattaci</button>
