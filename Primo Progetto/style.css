@@ -4,70 +4,78 @@ li {
     align-content: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-   }
-   
-   h1{
-     color: white;
-     font-family: Arial, Helvetica, sans-serif;
-     text-align-last: center;
-   }
-   
+  }
+  
+  h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align-last: center;
+  }
+  
+  section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
   Div {
-      background-color: beige;
-      text-align: center;
-      width: 250px;
-      height: 300px;
+    display: inline-block;
+    float: left;
+    background-color: beige;
+    text-align: center;
+    width: 250px;
+    height: 300px;
   }
   
-  header{
-      background-color: black
+  header {
+    background-color: black;
   }
   
-  form{
-     background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0RyhN-FUX2J10MqojH4ZUF48_ktvsmAgEfd0dK0X49OgGkD9GB1OGpQPLBNEBuZn7npNdQdshLXcxyGxaDfhrwZvDClcv5GCP5aHj9d5MOACyHUPXeA7GjC5-bv3PVWSI-6PdDQ/s1600/jesus-faustina.jpg);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-      padding-left: 200px;
-      padding-right: 200px;
-      padding-bottom: 50px;
-      padding-top: 50px;
-      font-family: Arial, Helvetica, sans-serif;
-      color: white;
+  form {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0RyhN-FUX2J10MqojH4ZUF48_ktvsmAgEfd0dK0X49OgGkD9GB1OGpQPLBNEBuZn7npNdQdshLXcxyGxaDfhrwZvDClcv5GCP5aHj9d5MOACyHUPXeA7GjC5-bv3PVWSI-6PdDQ/s1600/jesus-faustina.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
   }
   
-  input[type=text] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: 2px solid rgb(255, 238, 0);
-      border-radius: 10px;
-    }
-  
-  button{
-      background-color: black;
-      color: white;
-      border-color: aqua;
-      width: 80px;
-      height: 40px;
-      margin-top:30px;
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 238, 0);
+    border-radius: 10px;
   }
   
-  .bottoneform{
-      background-color: white;
-      color: black;
-      border: 2px solid rgb(255, 238, 0);
-      border-radius: 10px;
-      width: 150px;
-      height: 40px;
-      margin-top:30px;
+  button {
+    background-color: black;
+    color: white;
+    border-color: greenyellow;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    margin-top: 30px;
   }
   
-  footer{
-      display:flex;
-      justify-content:center;
-      background-color: darkgreen;
-      width: 790px;
-      height:100px;
+  #bf {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(255, 238, 0);
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: darkgreen;
+    width: 790px;
+    height: 100px;
   }
