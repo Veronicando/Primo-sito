@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Suore Online</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+<body>
+    <header>
+        <img src="https://media.istockphoto.com/id/450247253/it/foto/suora-in-una-chiesa.jpg?s=612x612&w=0&k=20&c=sXiK9sjTGxfj7kSTfSNz3k523vgbtXxhLyTS6Im8qog=" alt="suora con rosario" width="785" height="300">
+        <nav>
+            <h1>Benvenuti su Suore Online</h1>
+            <ul>
+                <li>Home</li>
+                <li>Chi siamo</li>
+                <li>Confessati</li>
+                <li>Pentiti</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div>
+            <h3>Prega con noi</h3><br>
+            <p>Ti aspettiamo tutti i giorni alle 16:00 per recitare insieme il Santo Rosario. Un semplice appuntamento per trovare la pace interiore.</p>
+        </div>
+        <div>
+            <h3>Confessati</h3>
+            <p>Liberati dal peso dei tuoi peccati. La confessione ti avvicina al Nostro Signore.</p>
+            <img src="https://thumbs.dreamstime.com/b/ritratto-di-giovane-bella-suora-della-donna-che-prega-con-il-isolat-del-rosario-52078993.jpg" alt="suora con rosario" width="180" height="160">
+        </div>
+        <div>
+            <h3>Pentiti</h3>
+            <p>Lo so che hai peccato. Pentiti!</p><br>
+            <iframe src="https://www.youtube.com/watch?v=jgbIErsFO10" width="230" height="180"></iframe>
+        </div>
+    </section>
+
+    <form>
+        <h2>Rispondi alla chiamata del Signore</h2><br>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Il tuo nome"><br><br>
+
+        <label for="cognome">Cognome</label>
+        <input type="text" id="cognome" name="cognome" placeholder="Il tuo cognome"><br><br>
+
+        <label for="sesso">Sesso</label><br>
+        <select id="sesso" name="sesso">
+            <option value="femmina">Femmina</option>
+            <option value="maschio">Maschio</option>
+        </select><br><br>
+
+        <label for="luogo di nascita">Luogo di nascita</label><br>
+        <select id="luogo di nascita" name="luogo di nascita">
+            <option value="taranto">Taranto</option>
+            <option value="martina franca">Martina Franca</option>
+            <option value="pulsano">Pulsano</option>
+        </select><br><br>
+
+        <label for="data di nascita">Data di nascita:</label><br>
+        <input type="date" id="data di nascita" name="data di nascita"><br><br>
+
+        <button type="submit" id="bf" onclick="mostramessaggio()">Diventa novizia</button>
+        <p id="message"></p>
+    </form>
+
+    <footer>
+        <button>Contattaci</button>
+    </footer>
+
+    <a id="myLink" href="https://www.pretionline.it/">Clicca qui</a>
+</body>
+</html>
