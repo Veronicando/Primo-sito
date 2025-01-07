@@ -1,16 +1,16 @@
-function mostramessaggio() {
+function mostramessaggio(event) {
   var fm = document.getElementById("femmina").value
   var ms = document.getElementById("maschio").value
   var sessoval = document.getElementById("sesso").value
   var link = document.getElementById("myLink").href
   let message
 
-  if (sessoval == fm) {
+  if (sessoval === fm) {
     message = "Grazie per aver intrapreso questo percorso"
-  } else if (sessoval == ms) {
+  } else if (sessoval === ms) {
     message =
-      "Siamo spiacenti, questo percorso è riservato al genere femminile. Per perseguire la tua vocazione ti consigliamo di visitare il seguente link" +
-      link
+      "Siamo spiacenti, questo percorso è riservato al genere femminile. Per perseguire la tua vocazione ti consigliamo di visitare il seguente link " + "<a href= '" +
+      link + "'>Clicca qui</a>"
   }
-  document.getElementById("message").innerText = message
+  document.getElementById("message").innerHTML = message
 }
