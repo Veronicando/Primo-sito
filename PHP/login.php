@@ -23,18 +23,27 @@ La pagina mostrerà "Utente o password non validi".
 
 
 */
-$utenti= [$persona1,$persona2,$persona3];
 $persona1 = ["marco@email.it","12345","Marco","Rossi"];
 $persona2 = ["luigi@email.it","abcdef","Luigi","Bianchi"];
 $persona3 = ["luca@email.it","123abc","Luca","Verdi"];
-$message= "";
-foreach($utenti as $utente){
-    if(isset($_POST["Login"])){
-        if(isset($_POST['Email'])&&($_POST['Password']==$utente)){
-        $message= "Bentornato ".$utente[2]." ".$utente[3].;
+$utenti= [$persona1,$persona2,$persona3];
+
+if(isset($_POST["Login"])){
+    if(isset($_POST['Email'])&&isset($_POST['Password'])){
+        if(($_POST['Email'])==''&&($_POST['Password'])==''){
+             echo 'Compila tutti i campi';
+        }else{
+            foreach($utenti as $utente){
+                foreach($utente as $campo){
+                    if((($_POST['Email'])&&($_POST['Password']))==$utente){
+                      echo 'Bentornato '.$campo[2].' '.$campo[3].'.';
+                    }  
+                }
+            }    
+        }
     }
-}
-}
+}    
+
 ?>
 <html>
     <style>
@@ -48,13 +57,13 @@ foreach($utenti as $utente){
             <span>Email:</span>
             <input type="email" name="Email">
             <?php
-                 if(isset($_POST['Email'])&&($_POST['Email']==''))
-                 echo '<span class="errore">Campo Obbligatorio</span>';
+                if(isset($_POST['Email'])&&($_POST['Email']==''))
+                echo '<span class="errore">Campo Obbligatorio</span>';
             ?>
             <span>Password:</span>
             <input type="password" name="Password">
             <?php
-                 if(isset($_POST['Password'])&&($_POST['Password']==''))
+                if(isset($_POST['Password'])&&($_POST['Password']==''))
                 echo '<span class="errore">Campo Obbligatorio</span>';
             ?>
             <button type="submit" name="Login">Login</button>
