@@ -4,7 +4,6 @@ $host = 'localhost'; // o l'IP del tuo server
 $username = 'root';  // il tuo username MySQL
 $password = '';      // la tua password MySQL
 $dbname = 'dati_utenti'; // il nome del tuo database
-// Nome della tabella da cui vuoi vedere la struttura
 $table = "utenti"; // Sostituisci con il nome della tua tabella
 
 // Crea la connessione
@@ -14,37 +13,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connessione fallita: " . $conn->connect_error);
 } else {
-echo "Connessione riuscita!";
-}
-
-// Esegui la query per ottenere tutte le tabelle
-$sql = "SHOW TABLES";
-$result = $conn->query($sql);
-
-// Verifica se ci sono tabelle
-if ($result->num_rows > 0) {
-    // Stampa le tabelle
-    echo "Tabelle nel database '$dbname':<br>";
-    while($row = $result->fetch_assoc()) {
-        echo $row["Tables_in_$dbname"] . "<br>"; // Mostra il nome di ogni tabella
-    }
-} else {
-    echo "Nessuna tabella trovata.";
-}
-
-// Esegui la query per ottenere la struttura della tabella
-$sql = "DESCRIBE $table";
-$result = $conn->query($sql);
-
-// Verifica se la tabella esiste
-if ($result->num_rows > 0) {
-    // Stampa la struttura della tabella
-    echo "Struttura della tabella '$table':<br>";
-    while($row = $result->fetch_assoc()) {
-        echo "Colonna: " . $row["Field"] . " - Tipo: " . $row["Type"] . "<br>";
-    }
-} else {
-    echo "Tabella non trovata.";
+    echo "Connessione riuscita!<br><br>";
 }
 
 // Esegui la query per ottenere i dati dalla tabella
@@ -53,11 +22,19 @@ $result = $conn->query($sql);
 
 // Verifica se ci sono dati
 if ($result->num_rows > 0) {
-    echo "Dati nella tabella '$table':<br>";
-    // Stampa i dati
+    // Crea la tabella HTML
+    echo "<table border='1' cellpadding='5' cellspacing='0'>";
+    echo "<tr><th>Nome</th><th>Cognome</th><th>Codice Fiscale</th></tr>";
+
+    // Stampa i dati in ogni riga della tabella
     while($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["ID"] . " - Nome: " . $row["Nome"] . " - Cognome: " . $row["Cognome"] . " - Codice Fiscale: " . $row["Codice_fiscale"] . "<br>";
+        echo "<tr>";
+        echo "<td>" . $row["Nome"] . "</td>";
+        echo "<td>" . $row["Cognome"] . "</td>";
+        echo "<td>" . $row["Codice_fiscale"] . "</td>";
+        echo "</tr>";
     }
+    echo "</table>";
 } else {
     echo "Nessun dato trovato nella tabella.<br>";
 }
